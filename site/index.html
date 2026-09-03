@@ -8,21 +8,53 @@
     <script defer src="server.js"></script>
 </head>
 <body class="container">
-    <header class="cabecalho">
-        <h1 id="titulo">Lista de Produtos</h1>
-    </header>
+    <main class="conteudo">
+        <header class="cabecalho">
+            <div class="menu-cima">
+                <h1 id="titulo">Lista de Produtos</h1>
+                <p>Gerenciador de estoque de produtos eletronicos</p>
+            </div>
+        </header>
 
-    <section id="lista">
-        <table>
-            <tr class="header">
-                <th>Categoria</th>
-                <th>Produto</th>
-                <th>Preco</th>
-                <th>Estoque</th>
-            </tr>
+        <section class="crud-produtos">
+            <table class="tabela">
+                <tr class="header">
+                    <th>Categoria</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                </tr>
 
-            <tr id="elements"></tr>
-        </table>
-    </section>
+                <tbody id="elementos">
+                        <tr>
+                            <td>${element.categoria}</td>
+                            <td>${element.descricao}</td>
+                            <td>${element.preco}</td>
+                            <td>${element.estoque}</td>
+                        </tr>
+                                                <tr>
+                            <td>${element.categoria}</td>
+                            <td>${element.descricao}</td>
+                            <td>${element.preco}</td>
+                            <td>${element.estoque}</td>
+                                                </tr>
+                                                                        <tr>
+                            <td>${element.categoria}</td>
+                            <td>${element.descricao}</td>
+                            <td>${element.preco}</td>
+                            <td>${element.estoque}</td>
+                        </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="botoes">
+            <button class="btn-padrao" id="carregar" onclick="carregarProduto()">Carregar Produtos</button>
+            <button class="btn-padrao" id="cadastrar" onclick="cadastrarProduto()">Cadastrar Produto</button>
+            <button class="btn-padrao" id="editar" onclick="editarProduto()">Editar Produto</button>
+            <button class="btn-padrao" id="excluir" onclick="excluirProduto()">Excluir Produto</button>
+        </div>
+    </main>
+
 </body>
 </html>
