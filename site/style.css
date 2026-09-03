@@ -1,0 +1,14 @@
+
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 234, 234);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    gap: 50px;
+}
