@@ -11,14 +11,18 @@
     <main class="conteudo">
         <header class="cabecalho">
             <div class="menu-cima">
+                <img src="img/logo.png" id="logo"alt="Logo da empresa">
                 <h1 id="titulo">Lista de Produtos</h1>
                 <p>Gerenciador de estoque de produtos eletronicos</p>
+            </div>
+            <div class="logo">
             </div>
         </header>
 
         <section class="crud-produtos">
             <table class="tabela">
                 <tr class="header">
+                    <th>ID</th>
                     <th>Categoria</th>
                     <th>Produto</th>
                     <th>Preço</th>
@@ -26,33 +30,15 @@
                 </tr>
 
                 <tbody id="elementos">
-                        <tr>
-                            <td>${element.categoria}</td>
-                            <td>${element.descricao}</td>
-                            <td>${element.preco}</td>
-                            <td>${element.estoque}</td>
-                        </tr>
-                                                <tr>
-                            <td>${element.categoria}</td>
-                            <td>${element.descricao}</td>
-                            <td>${element.preco}</td>
-                            <td>${element.estoque}</td>
-                                                </tr>
-                                                                        <tr>
-                            <td>${element.categoria}</td>
-                            <td>${element.descricao}</td>
-                            <td>${element.preco}</td>
-                            <td>${element.estoque}</td>
-                        </tr>
                 </tbody>
             </table>
         </section>
 
         <div class="botoes">
-            <button class="btn-padrao" id="carregar" onclick="carregarProduto()">Carregar Produtos</button>
-            <button class="btn-padrao" id="cadastrar" onclick="cadastrarProduto()">Cadastrar Produto</button>
-            <button class="btn-padrao" id="editar" onclick="editarProduto()">Editar Produto</button>
-            <button class="btn-padrao" id="excluir" onclick="excluirProduto()">Excluir Produto</button>
+            <button class="btn-padrao" id="carregar">Carregar Produtos</button>
+            <button class="btn-padrao" id="cadastrar">Cadastrar Produto</button>
+            <button class="btn-padrao" id="editar">Editar Produto</button>
+            <button class="btn-padrao" id="excluir">Excluir Produto</button>
         </div>
     </main>
 
